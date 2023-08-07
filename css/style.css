@@ -1,0 +1,209 @@
+:root {
+    --main-bg-color: #001c38;
+    --color-white: #fff;
+    --color-white-tint: #ababab;
+    --color-red: #9b1537;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 300 !important;
+}
+
+.body-container{
+    min-height: calc(100vh - 100px) !important;
+    padding: 0 !important;
+}
+
+span{
+    font-weight: bold;
+}
+
+.content{
+    text-align: left;
+    color: #0b090a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px 120px 0px 120px;
+
+}
+.pro-hero{
+    background-color: azure;
+    background: url("images/project\ management.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px auto;
+    margin: 0;
+    padding: 100;
+    width: 100%;
+}
+
+.pro-heading{
+    text-align: center;
+    padding: 200px;
+    font-size: 72px;
+    color: #FFFFFF;
+}
+
+.header-nav-bg {
+    background-color: var(--main-bg-color)
+}
+.header-nav-bg .header-logo {
+    color: var(--color-white);
+    text-decoration: none;
+}
+.header-nav-bg .header-link {
+    color: var(--color-white);
+    text-decoration: none;
+}
+.header-nav-bg .header-link:hover {
+    color: var(--color-white-tint);
+    text-decoration: none;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--color-white-tint) !important;
+}
+.header-logo-text {
+    font-family: 'Borel', cursive;
+}
+footer{
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+}
+footer p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.footer-right {
+    color: var(--color-white);
+    text-align: center;
+}
+.footer-left {
+    color: var(--color-white);
+    text-align: center;
+}
+.header-logo img {
+    width: 50px;
+}
+.section-home-top {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/ajileye4.jpg);
+    background-size: cover;
+    background-color: var(--main-bg-color);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.section-home-video {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+}
+.section-home-video iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.section-home-skills {
+    background-color: var(--main-bg-color);
+    padding: 5px 25px;
+    border-radius: 3px;
+    color: var(--color-white);
+    display: inline-block;
+    margin: 10px 0 20px;
+    text-align: center;
+}
+.section-home-btn {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background-color: var(--color-red);
+    border-style: none;
+    border-radius: 50px 50px 50px 50px;
+    padding: 15px 50px 15px 50px;
+    display: inline-block;
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 500;
+}
+.section-home-name {
+    color: var(--color-white);
+    text-transform: uppercase;
+    text-align: center;
+}
+.section-home-top-content {
+    padding: 100px 0 !important;
+}
+.section-home-top-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0 0 !important;
+}
+.navbar-toggler-icon {
+    background-color: white;
+}
+.section-home-contact {
+    min-height: 400px;
+    padding: 50px 15px;
+}
+.section-home-contact-third div {
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: left;
+}
+.section-home-contact-third img {
+    width: 100%;
+}
+.section-home-contact-third p {
+    margin-bottom: 0;
+    text-align: left;
+}
+.section-home-contact-second iframe {
+    width: 345px !important;
+}
+/* Mobile Responsive */
+@media screen and (max-width: 767px) {
+    .section-home-top-content {
+        padding: 100px 35px !important;
+    }
+    footer p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .header-nav-bg .justify-content-between {
+        padding: 15px;
+    }
+    .section-home-contact div{
+        margin: 25px 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .section-home-contact{
+        display: flex !important;
+    }
+    .section-home-contact div {
+        width: 50%;
+        margin: 25px 0;
+    }
+    .section-home-contact-third div {
+        margin-bottom: 30px;
+        width: 100%;
+        text-align: left;
+    }
+    .section-home-contact-third img {
+        width: 100%;
+    }
+}
