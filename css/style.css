@@ -27,32 +27,6 @@ span{
     font-weight: bold;
 }
 
-.content{
-    text-align: left;
-    color: #0b090a;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 0px 120px 0px 120px;
-
-}
-.pro-hero{
-    background-color: azure;
-    background: url("images/project\ management.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px auto;
-    margin: 0;
-    padding: 100;
-    width: 100%;
-}
-
-.pro-heading{
-    text-align: center;
-    padding: 200px;
-    font-size: 72px;
-    color: #FFFFFF;
-}
-
 .header-nav-bg {
     background-color: var(--main-bg-color)
 }
@@ -179,6 +153,110 @@ footer p{
     color: var(--color-white);
     text-align: center;
 }
+/* Autobiography Page*/
+.section-autobiography-page-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/contact-header.jpg);
+    background-size: cover;
+    background-color: var(--main-bg-color);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.section-autobiography-page-header .row {
+    min-height: 300px;
+}
+.section-autobiography-page-container {
+    padding: 50px 0 80px;
+}
+.section-autobiography-page-content .justify {
+    text-align: justify;
+}
+
+/* Speaking Page*/
+.section-speaking-page-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/speaking.jpg);
+    background-size: cover;
+    background-color: var(--main-bg-color);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.section-speaking-page-header .row {
+    min-height: 300px;
+}
+.section-speaking-page-container {
+    padding: 50px 0 80px;
+}
+.section-speaking-page-content .underline {
+    text-decoration: underline;
+    font-weight: 600;
+}
+.section-speaking-page-content .justify {
+    text-align: justify;
+}
+
+/* Coaching Page*/
+.section-coaching-page-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/coaching.jpg);
+    background-size: cover;
+    background-color: var(--main-bg-color);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.section-coaching-page-header .row {
+    min-height: 300px;
+}
+.section-coaching-page-container {
+    padding: 50px 0 80px;
+}
+.section-coaching-page-content .underline {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+/* Training Page*/
+.section-training-page-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/training.jpg);
+    background-size: cover;
+    background-color: var(--main-bg-color);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.section-training-page-header .row {
+    min-height: 300px;
+}
+.section-training-page-container {
+    padding: 50px 0 80px;
+}
+.section-training-page-content .underline {
+    text-decoration: underline;
+}
+
+/* Project Management Page*/
+.section-project-page-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/project_management.jpg);
+    background-size: cover;
+    background-color: var(--main-bg-color);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.section-project-page-header .row {
+    min-height: 300px;
+}
+.section-project-page-container {
+    padding: 50px 0 80px;
+}
+.section-project-page-content p {
+    text-align: justify;
+}
 
 /* Testimonials Page*/
 .section-testimonials-page-header {
@@ -206,6 +284,9 @@ footer p{
 .section-testimonials-page-container h3 {
     text-align: center;
     font-size: 3rem;
+}
+.section-testimonials-page-container p {
+    text-align: justify;
 }
 .section-testimonials-page-container {
     padding: 50px 0 80px;
@@ -236,6 +317,18 @@ footer p{
 
 
 /* Mobile Responsive */
+@media screen and (max-width: 345px) {
+    .section-home-contact-second iframe {
+        width: 200px !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .header-logo-text {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .section-home-top-content {
         padding: 100px 35px !important;
@@ -252,6 +345,12 @@ footer p{
     }
     .section-contact-page-content .section-contact-page-right {
         padding-top: 50px;
+    }
+    p {
+        font-size: 14px;
+    }
+    li {
+        font-size: 14px;
     }
 }
 
@@ -272,3 +371,8 @@ footer p{
         width: 100%;
     }
 }
+
+
+/* .section-home-contact-second iframe {
+    width: 345px !important;
+} */
