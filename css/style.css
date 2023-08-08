@@ -5,6 +5,7 @@
     --color-red: #9b1537;
 }
 
+
 *{
     margin: 0;
     padding: 0;
@@ -177,6 +178,40 @@ footer p{
 .section-page-header-title {
     color: var(--color-white);
     text-align: center;
+}
+
+/* Testimonials Page*/
+.section-testimonials-page-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/recommedation-header.jpg);
+    background-size: cover;
+    background-color: var(--main-bg-color);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.section-testimonials-page-header .row {
+    min-height: 300px;
+}
+.section-testimonials-page-content i {
+    font-size: 3rem;
+    color: #bfbfbf;
+    border-color: #bfbfbf;
+}
+.section-testimonials-page-content .title h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.section-testimonials-page-container h3 {
+    text-align: center;
+    font-size: 3rem;
+}
+.section-testimonials-page-container {
+    padding: 50px 0 80px;
+}
+.section-testimonials-page-container .container {
+    margin-top: 25px !important;
 }
 
 /* Contact Page*/
